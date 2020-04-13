@@ -1,0 +1,15 @@
+// componentWillMount()
+
+getDerivedStateFromProps(props, state)
+
+getSnapShotBeforeUpdate()
+
+componentDidMount()
+
+// componentWillReceiveProps()
+
+shouldComponentUpdate()
+
+// componentWillUpdate()
+
+componentWillUnmount()
