@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  margin: 50px auto;
+  width: 380px;
 }
 
 .App-logo {
@@ -14,14 +16,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
+  padding: 20px 0;
 }
 
 .App-link {
@@ -32,7 +35,57 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  /* background: #f8f6f6; */
+  color: #404040;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.todo-list {
+  border-top: 1px solid #e6ebed;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.todo-list:before {
+  content: '';
+  width: 3px;
+  z-index: 2;
+  border: 1px solid #f2e3df;
+  border-width: 0 1px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 35px;
+}
+
+.todo-list li {
+  position: relative;
+  padding: 7px 15px 7px 50px;
+  line-height: 21px;
+  font-size: 12px;
+  color: #8b8f97;
+  border-bottom: 1px solid #e6ebed;
+}
+
+.todo-list .toggle {
+  display: block;
+  height: 35px;
+}
+
+.item-para {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
